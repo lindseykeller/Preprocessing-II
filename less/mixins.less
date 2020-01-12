@@ -1,1 +1,21 @@
 // Mixins in here
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-mobile (@d, @j, @align, @dir) {
+    display: @d;
+    justify-content: @j;
+    align-items: @align ;
+    flex-direction: @dir;
+}
+.button-style (@bc, @w, @align, @p, @border, @c, @font) {
+      background-color: @bc;
+      width: @w;
+      text-align: @align;
+      padding: @p;
+      border-radius: @border;
+      color: @c;
+      font-size: @font;
+}
